@@ -1,0 +1,13 @@
+{
+    "todo-tree.highlights.defaultHighlight": {
+        "background": "#12520a"
+    },
+    "lldb.displayFormat": "auto",
+    "lldb.showDisassembly": "never",
+    "lldb.dereferencePointers": true,
+    "lldb.consoleMode": "commands",
+    "launchBinaryName": "dsa",
+    "cSpell.words": [
+        "dsa",
+    ]
+}

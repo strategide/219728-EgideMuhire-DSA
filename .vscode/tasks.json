@@ -1,0 +1,51 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+                {
+            "type": "shell",
+            "label": "cmake_clean",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "${workspaceFolder}/build"
+            ],
+            "detail": "Deletes the build/ directory"
+        },
+        {
+            "type": "shell",
+            "label": "cmake_config",
+            "command": "cmake",
+            "args": [
+                "-B",
+                "${workspaceFolder}/build",
+                "-G",
+                "Ninja"
+            ],
+            "detail": "Runs the config cmake step."
+        },
+        {
+            "type": "shell",
+            "label": "cmake_build",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build",
+                "--parallel"
+            ],
+            "group": "build",
+            "detail": "Runs the build cmake step."
+        },
+        {
+            "type": "shell",
+            "label": "cmake_clean_config_build",
+            "dependsOn": [
+                "cmake_clean",
+                "cmake_config",
+                "cmake_build"
+            ],
+            "dependsOrder": "sequence",
+            "group": "build",
+            "detail": "Runs the clean + config + build cmake steps."
+        }
+    ]
+}

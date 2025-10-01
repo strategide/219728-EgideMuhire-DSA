@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceRoot}/build/${config:launchBinaryName}",
+            "args": [],
+            "internalConsoleOptions": "neverOpen",
+            "preLaunchTask": "cmake_build"
+        },
+        {
+            "name": "Clean Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceRoot}/build/${config:launchBinaryName}",
+            "args": [],
+            "internalConsoleOptions": "neverOpen",
+            "preLaunchTask": "cmake_clean_config_build"
+        }
+    ]
+}
