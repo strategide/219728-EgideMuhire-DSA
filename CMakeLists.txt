@@ -14,7 +14,7 @@ project(
 
 set(
     SOURCES
-    src/hello.cpp
+    src/assignment2.cpp
 )
 
 add_executable(${TARGET} ${SOURCES})
