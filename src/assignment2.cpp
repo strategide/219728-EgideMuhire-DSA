@@ -339,14 +339,6 @@ void showMainMenu() {
 
 // Main program entry.
 int main() {
-    root = new Node(20);
-    root->left = new Node(15);
-    root->left->left = new Node(10);
-    root->left->right = new Node(18);
-    root->right = new Node(25);
-    // root->right->left = new Node(22);
-    // root->right->right = new Node(27);
-
     showMainMenu();
     return 0;
 }
