@@ -14,7 +14,8 @@ project(
 
 set(
     SOURCES
-    src/assignment2.cpp
+    # src/assignment3.cpp
+    src/cat2.cpp
 )
 
 add_executable(${TARGET} ${SOURCES})
